@@ -4,18 +4,20 @@ import re
 
 def crack_password(digits, filename, pattern):
     n = 1
-    n_max = 9999999999999999999 % (10**digits)
-    while n < n_max + 1:
-        pn = str(n).zfill(digits)
-        if pattern is None or pattern.match(pn):
-            try:
-                Pdf.open(filename_or_stream = filename, password = pn)
-                print("Password is " + pn)
-                return True
-            except:
-                # incorrect password
-                pass
-        n += 1
+    for y in range(1900, 2010):
+        for m in range(1, 13):
+            for d in range(1, 34):
+                pn = f"{y}-{m:02d}-{d:02d}"
+                print(pn)
+                if pattern is None or pattern.match(pn):
+                    try:
+                        Pdf.open(filename_or_stream = filename, password = pn)
+                        print("Password is " + pn)
+                        return True
+                    except:
+                        # incorrect password
+                        pass
+                n += 1
     return False
 
 # Parse Commandline Args
