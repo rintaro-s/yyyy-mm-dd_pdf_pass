@@ -1,4 +1,9 @@
 <h1><span style="color: #000000; background-color: #fbeeb8;">必ずご自身のファイル、またはアクセス許可を得たファイルに対してのみ実行してください。他人のファイルに対して行うと、不正アクセス禁止法に違反し、逮捕される可能性があります。</span></h1>
+
+
+あくせす　かうんたー<br>
+<img src="https://count.getloli.com/@rintaro-s?name=rintaro-s&theme=gelbooru&padding=5&offset=0&align=top&scale=1&pixelated=1&darkmode=auto"/>
+
 <br><br>
 <h2>ライブラリのインストール</h2>
 python３xと、pikepdfを使用します。
